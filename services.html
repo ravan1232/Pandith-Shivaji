@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vedic Astrology Services | Pandith Shivaji Sydney Australia</title>
+  <meta name="description" content="Explore ancient Vedic Astrology services by Master Pandith Shivaji in Sydney. Janam Kundli, love problem solutions, marriage compatibility, career remedies, and evil spirit removal.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Canvas Starfield & Ambient Lights -->
+  <canvas id="starfield-canvas"></canvas>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- Top Announcement Bar with Live Australian Clock -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-notice">
+        <span class="aus-badge">🇦🇺 Australia</span>
+        <span class="sydney-live-date">Thu, 24 Sep 2026</span> •
+        <span class="sydney-live-time">Loading Sydney Time...</span>
+        <span class="office-status-badge sydney-office-status"></span>
+      </div>
+      <div class="top-bar-contacts">
+        <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji" target="_blank" rel="noopener noreferrer" class="top-contact-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.214 8.214 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.46-.3z"/></svg>
+          <span>WhatsApp: +61 426 528 857</span>
+        </a>
+        <a href="mailto:astrologerpa857@gmail.com" class="top-contact-link">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          <span>astrologerpa857@gmail.com</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header with Animation -->
+  <header class="site-header" id="site-header">
+    <div class="header-border-beam"></div>
+    <div class="header-container">
+      <a href="index.html" class="site-brand" aria-label="Pandith Shivaji Home">
+        <div class="brand-emblem-wrap">
+          <div class="emblem-halo"></div>
+          <div class="brand-emblem">
+            <span class="brand-emblem-text">ॐ</span>
+          </div>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">PANDITH SHIVAJI</span>
+          <span class="brand-sub">Vedic Astrologer & Healer</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-menu" id="primary-navigation" aria-label="Main Navigation">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About Pandith Ji</a>
+        <a href="services.html" class="nav-link active-nav">Services</a>
+        <a href="horoscope.html" class="nav-link">Daily Horoscope</a>
+        <a href="consultation.html" class="nav-link">Consultation</a>
+        <a href="reviews.html" class="nav-link">Reviews</a>
+        <a href="contact.html" class="nav-link">Sydney Location</a>
+      </nav>
+
+      <!-- Header Actions -->
+      <div class="header-actions">
+        <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20consult%20regarding%20services." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp header-wa-btn">
+          <svg class="wa-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.214 8.214 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.46-.3z"/></svg>
+          <span>Chat on WhatsApp</span>
+        </a>
+        <button class="mobile-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu">
+          <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Hero Header -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        <span>Services</span>
+      </div>
+      <span class="section-badge">🔱 Authentic Vedic Shastra</span>
+      <h1 class="section-title">Specialized Vedic <span class="text-gold">Solutions & Remedies</span></h1>
+      <p class="section-subtitle">
+        Master Pandith Shivaji provides comprehensive, compassionate, and permanent astrological solutions to life's most complex challenges.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Detailed Section -->
+  <section class="services-full-section">
+    <div class="container">
+
+      <!-- Service 1: Janam Kundli -->
+      <div class="service-full-row">
+        <div class="service-full-img-box">
+          <img src="assets/images/hero-celestial-wheel.jpg" alt="Janam Kundli Reading" class="service-full-img">
+        </div>
+        <div class="service-full-content">
+          <span class="section-badge">Kundli Shastra</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 16px;">Janam Kundli & Complete Life Chart Analysis</h2>
+          <p style="margin-bottom: 16px;">
+            Your Janam Kundli is your cosmic blueprint. Pandith Shivaji calculates all 12 astrological houses, Ascendant (Lagna), planetary combinations (Yogas), and current Dasha cycles to reveal your financial prospects, health tendencies, ideal career direction, and relationship destiny.
+          </p>
+          <ul class="service-features-list" style="margin-bottom: 24px;">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Detailed Dasha and Sade Sati timelines</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Detection of Kaal Sarp, Manglik, and Pitru Doshas</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Customized gemstone and mantra remedies</li>
+          </ul>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20get%20my%20complete%20Janam%20Kundli%20reading." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+              <span>Book Kundli via WhatsApp</span>
+            </a>
+            <a href="consultation.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.875rem;">Online Form →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2: Love & Relationship -->
+      <div class="service-full-row reverse">
+        <div class="service-full-img-box">
+          <img src="assets/images/love-marriage.jpg" alt="Love Problem Solutions" class="service-full-img">
+        </div>
+        <div class="service-full-content">
+          <span class="section-badge">Relationship Harmony</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 16px;">Love, Marriage & Relationship Problem Solutions</h2>
+          <p style="margin-bottom: 16px;">
+            Heartbreak, bitter arguments, infidelity, and sudden separations often stem from adverse planetary transits in the 7th house or Venus afflictions. Pandith Shivaji uses gentle Vedic remedies to clear emotional misunderstandings, bring back ex-partners, and gain parental blessings for inter-caste or love marriages.
+          </p>
+          <ul class="service-features-list" style="margin-bottom: 24px;">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> 36-Guna Kundli Milan matching for marriage harmony</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Reconciliation of separated couples & divorce prevention</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Removal of third-party interference and evil eye on romance</li>
+          </ul>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20need%20urgent%20solutions%20for%20my%20love%20and%20marriage%20issues." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+              <span>Discuss Love Problem on WhatsApp</span>
+            </a>
+            <a href="consultation.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.875rem;">Online Form →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: Career & Wealth -->
+      <div class="service-full-row">
+        <div class="service-full-img-box">
+          <img src="assets/images/career-wealth.jpg" alt="Career and Wealth Astrology" class="service-full-img">
+        </div>
+        <div class="service-full-content">
+          <span class="section-badge">Business & Finance</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 16px;">Career, Business Growth & Financial Prosperity</h2>
+          <p style="margin-bottom: 16px;">
+            Break through chronic workplace stagnation, contract cancellations, and debilitating debt. Pandith Shivaji analyzes the 2nd (wealth), 10th (profession), and 11th (gains) houses to recommend high-potency gemstones, energized Sri Yantra placements, and auspicious business commencement dates (Muhurtha).
+          </p>
+          <ul class="service-features-list" style="margin-bottom: 24px;">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Business revival strategies and partner compatibility</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Corporate leadership promotions & foreign visa success</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Certified Navaratna gemstone recommendations</li>
+          </ul>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20am%20facing%20career%20and%20financial%20hurdles." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+              <span>Consult on Career via WhatsApp</span>
+            </a>
+            <a href="consultation.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.875rem;">Online Form →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 4: Black Magic & Negative Energy -->
+      <div class="service-full-row reverse">
+        <div class="service-full-img-box">
+          <img src="assets/images/puja-healing.jpg" alt="Spiritual Healing and Negative Energy Removal" class="service-full-img">
+        </div>
+        <div class="service-full-content">
+          <span class="section-badge">Spiritual Protection</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 16px;">Black Magic, Evil Eye (Drishti) & Negative Energy Removal</h2>
+          <p style="margin-bottom: 16px;">
+            Unexplained sudden illnesses, terrifying nightmares, sudden domestic violence, or persistent financial ruin can be symptoms of malicious external energies or evil eye curses. Pandith Shivaji conducts sacred Vedic Havans and crafts personalized protective Kavachs to cleanse your aura and home permanently.
+          </p>
+          <ul class="service-features-list" style="margin-bottom: 24px;">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Immediate identification of negative vibrations in homes/businesses</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Powerful Sudarshana & Narasimha protective rituals</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Lifetime energetic shielding talismans</li>
+          </ul>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20suspect%20negative%20energy%20or%20evil%20eye%20disturbances." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+              <span>Emergency Protection on WhatsApp</span>
+            </a>
+            <a href="consultation.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.875rem;">Online Form →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 5: Palmistry -->
+      <div class="service-full-row">
+        <div class="service-full-img-box">
+          <img src="assets/images/palmistry-reading.jpg" alt="Vedic Palmistry and Hastrekha" class="service-full-img">
+        </div>
+        <div class="service-full-content">
+          <span class="section-badge">Hastrekha Shastra</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 16px;">Palmistry & Hastrekha Shastra Reading</h2>
+          <p style="margin-bottom: 16px;">
+            If you do not know your exact time of birth, your palms contain an open book of your destiny. Hastrekha examines the subtle intersections of your Life Line, Heart Line, Sun Line, and Mounts to forecast lifespan, marital happiness, children, and prosperity.
+          </p>
+          <ul class="service-features-list" style="margin-bottom: 24px;">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Available in-person at Regents Park Sydney office</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Remote palm reading: simply send clear photos of palms over WhatsApp</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Combined analysis with Face Reading (Samudrika Shastra)</li>
+          </ul>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20send%20my%20palm%20photos%20for%20a%20reading." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+              <span>Send Palm Photos on WhatsApp</span>
+            </a>
+            <a href="consultation.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.875rem;">Online Form →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 6: Graha Dosha Shanti & Vedic Havan Pujas -->
+      <div class="service-full-row reverse tilt-card reveal-block-up">
+        <div class="service-full-img-box">
+          <img src="assets/images/puja-healing.jpg" alt="Graha Shanti and Vedic Puja" class="service-full-img">
+        </div>
+        <div class="service-full-content">
+          <span class="section-badge">Yagya & Havan</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 16px;">Graha Dosha Shanti & Specialized Vedic Havans</h2>
+          <p style="margin-bottom: 16px;">
+            Pacify afflictions of Saturn (Shani Sade Sati), Rahu-Ketu transit afflictions, Manglik Dosha, and Pitru Dosha. Customized authentic Vedic Havans performed with Sanskrit mantras for peace, health, and family prosperity.
+          </p>
+          <ul class="service-features-list" style="margin-bottom: 24px;">
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Navagraha Shanti, Maha Mrityunjaya & Lakshmi Puja</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Consecrated personal yantras and protective kavach provided</li>
+            <li><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg> Performed in-person in Sydney or live-streamed for interstate clients</li>
+          </ul>
+          <div style="display: flex; gap: 14px; flex-wrap: wrap;">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20arrange%20a%20Graha%20Shanti%20Puja." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+              <span>Book Graha Shanti on WhatsApp</span>
+            </a>
+            <a href="consultation.html" class="btn btn-secondary" style="padding: 8px 18px; font-size: 0.875rem;">Online Form →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Astrological Consultation Specifications & Guarantees Block -->
+      <div class="border-beam-card tilt-card reveal-block-scale" style="margin-top: 60px; padding: clamp(24px, 4vw, 44px);">
+        <div style="text-align: center; max-width: 780px; margin: 0 auto 36px;">
+          <span class="section-badge">📜 Client Charter & Standards</span>
+          <h2 style="font-size: 1.85rem; margin-bottom: 12px;">Pandith Shivaji's <span class="text-gold">Vedic Consultation Standards</span></h2>
+          <p style="color: var(--text-secondary); font-size: 0.95rem;">
+            Whether you consult in-person at 141 Kingsland Rd, Regents Park NSW 2143 or over WhatsApp from interstate/abroad, your consultation is held to the highest spiritual and ethical benchmarks.
+          </p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px;">
+            <div style="font-size: 1.8rem; margin-bottom: 10px;">🔒</div>
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 8px;">100% Strict Privacy</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Complete client confidentiality guaranteed. Personal details and reading records are never disclosed.</p>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px;">
+            <div style="font-size: 1.8rem; margin-bottom: 10px;">⏱️</div>
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Sydney AEST Timeliness</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Prompt response within Australian working hours (8:00 AM – 9:00 PM AEST) with emergency priority support.</p>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px;">
+            <div style="font-size: 1.8rem; margin-bottom: 10px;">💎</div>
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Positive Remedial Ethics</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Zero harmful practices or fear-mongering. Authentic Vedic Sanskrit mantras, yantras, and gemstone solutions only.</p>
+          </div>
+          <div style="background: rgba(255, 255, 255, 0.03); border: 1px solid var(--border-subtle); border-radius: var(--radius-md); padding: 20px;">
+            <div style="font-size: 1.8rem; margin-bottom: 10px;">📍</div>
+            <h4 style="color: #fff; font-size: 1.1rem; margin-bottom: 8px;">Direct Astrologer Access</h4>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">Speak directly with Master Pandith Shivaji himself, never a call-center agent or junior associate.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="disclaimer-box">
+        <p><strong>Spiritual & Astrological Disclaimer:</strong> Vedic Astrology is an ancient empirical system of cosmic wisdom. Remedies are intended to spiritually empower and guide your decisions.</p>
+      </div>
+
+      <div class="footer-top-grid">
+        <div class="footer-brand">
+          <div class="site-brand">
+            <div class="brand-emblem"><span class="brand-emblem-text">ॐ</span></div>
+            <div class="brand-text">
+              <span class="brand-name">PANDITH SHIVAJI</span>
+              <span class="brand-sub">Vedic Astrologer & Healer</span>
+            </div>
+          </div>
+          <p>Revered Indian Vedic Astrologer in Sydney, Australia. Guiding thousands worldwide toward peace, harmony, love reconciliation, and prosperity.</p>
+          <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm">
+            <span>Direct WhatsApp: +61 426 528 857</span>
+          </a>
+        </div>
+
+        <div class="footer-column">
+          <h4>Vedic Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">Janam Kundli Reading</a></li>
+            <li><a href="services.html">Love Problem Solution</a></li>
+            <li><a href="services.html">Kundli Milan (Marriage)</a></li>
+            <li><a href="services.html">Business & Wealth Astrology</a></li>
+            <li><a href="services.html">Black Magic Removal</a></li>
+            <li><a href="services.html">Palmistry & Face Reading</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Pandith Shivaji</a></li>
+            <li><a href="services.html">All Services</a></li>
+            <li><a href="horoscope.html">Daily Zodiac Horoscope</a></li>
+            <li><a href="consultation.html">Book Consultation</a></li>
+            <li><a href="reviews.html">Client Reviews</a></li>
+            <li><a href="contact.html">Sydney Location & Map</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>Contact & Location</h4>
+          <ul class="footer-contact-list">
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>141 Kingsland Rd, Regents Park NSW 2143, Australia<br>(Sydney, NSW)</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+              <a href="tel:+61426528857">+61 426 528 857</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:astrologerpa857@gmail.com">astrologerpa857@gmail.com</a>
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+              <span>Mon - Sun: 8:00 AM - 9:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>© 2026 Pandith Shivaji. All Rights Reserved. Master Vedic Astrologer.</div>
+        <div><a href="contact.html">141 Kingsland Rd, Regents Park NSW 2143</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <aside class="floating-whatsapp-container" aria-label="WhatsApp Quick Contact">
+    <div class="wa-popup-bubble" id="wa-popup-bubble">
+      <div class="wa-bubble-header">
+        <span>Pandith Shivaji (Online)</span>
+        <button class="close-bubble" id="close-wa-bubble" aria-label="Close Chat">×</button>
+      </div>
+      <p>Namaste! 🙏 Have questions about our astrology services? Chat directly on WhatsApp.</p>
+    </div>
+    <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20have%20an%20inquiry%20about%20your%20services." target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn" aria-label="Direct WhatsApp Chat">
+      <span class="notification-badge">1</span>
+      <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.214 8.214 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.46-.3z"/></svg>
+    </a>
+  </aside>
+
+  <!-- Mobile Sticky Bar -->
+  <div class="mobile-bottom-bar">
+    <div class="mobile-bottom-grid">
+      <a href="tel:+61426528857" class="mobile-bottom-btn btn-mobile-call"><span>Call Now</span></a>
+      <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji" target="_blank" rel="noopener noreferrer" class="mobile-bottom-btn btn-mobile-wa"><span>WhatsApp</span></a>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "pandith-shivaji-astrology",
+  "version": "1.0.0",
+  "description": "Master Pandith Shivaji - Vedic Astrologer & Spiritual Healer in Sydney, Australia",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx -y serve -l 8080 .",
+    "dev": "npx -y serve -l 8080 ."
+  },
+  "keywords": [
+    "astrology",
+    "vedic-astrology",
+    "pandith-shivaji",
+    "sydney",
+    "horoscope",
+    "kundli"
+  ],
+  "author": "Pandith Shivaji",
+  "license": "ISC"
+}
