@@ -30,7 +30,7 @@ A responsive, multi-page Vedic Astrology and Spiritual Healing web application b
 
 - **Instant Direct Contact Integrations**:
   - Direct WhatsApp links pre-filled with tailored consultation messages for `+61 426 528 857` (`https://wa.me/61426528857`).
-  - Official Gmail inquiry integration with `astrologerpa857@gmail.com`.
+  - Official Gmail inquiry integration with `astrologerps857@gmail.com`.
   - Floating WhatsApp chat badge with animated invitation bubble.
   - Mobile bottom sticky action bar with 1-click calling and WhatsApp routing.
 
@@ -98,5 +98,5 @@ Open `http://localhost:8080` in your web browser.
 
 - **Practitioner**: Master Pandith Shivaji Maharaj
 - **Phone / WhatsApp**: [+61 426 528 857](https://wa.me/61426528857)
-- **Email**: [astrologerpa857@gmail.com](mailto:astrologerpa857@gmail.com)
+- **Email**: [astrologerps857@gmail.com](mailto:astrologerps857@gmail.com)
 - **Address**: 141 Kingsland Rd, Regents Park NSW 2143, Australia

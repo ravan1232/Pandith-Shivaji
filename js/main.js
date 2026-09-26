@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   initStarfield();
   initZodiacExplorer();
   initConsultationForm();
+  initContactPageForm();
   initFaqAccordion();
   initMobileMenu();
   initHeaderScroll();
@@ -184,6 +185,14 @@ function initConsultationForm() {
 
   if (!form) return;
 
+  // Clear validation styling when user inputs text
+  const inputs = form.querySelectorAll(".form-control");
+  inputs.forEach((input) => {
+    input.addEventListener("input", () => {
+      input.classList.remove("is-invalid");
+    });
+  });
+
   function getFormData() {
     return {
       name: document.getElementById("client-name")?.value.trim() || "",
@@ -198,17 +207,22 @@ function initConsultationForm() {
   }
 
   function validateBasic(data) {
+    let isValid = true;
     if (!data.name) {
+      document.getElementById("client-name")?.classList.add("is-invalid");
       showFeedback("Please enter your full name.", "error");
       document.getElementById("client-name")?.focus();
-      return false;
+      isValid = false;
     }
-    if (!data.phone) {
-      showFeedback("Please provide your phone or WhatsApp number.", "error");
-      document.getElementById("client-phone")?.focus();
-      return false;
+    if (!data.phone || data.phone.length < 5) {
+      document.getElementById("client-phone")?.classList.add("is-invalid");
+      if (isValid) {
+        showFeedback("Please provide a valid phone or WhatsApp number.", "error");
+        document.getElementById("client-phone")?.focus();
+      }
+      isValid = false;
     }
-    return true;
+    return isValid;
   }
 
   function showFeedback(msg, type = "success") {
@@ -220,20 +234,17 @@ function initConsultationForm() {
     }, 6000);
   }
 
-  // Handle WhatsApp submission
-  if (whatsappBtn) {
-    whatsappBtn.addEventListener("click", (e) => {
-      e.preventDefault();
-      const data = getFormData();
-      if (!validateBasic(data)) return;
+  function submitToWhatsApp() {
+    const data = getFormData();
+    if (!validateBasic(data)) return;
 
-      const sydneyTimeNow = new Intl.DateTimeFormat('en-AU', {
-        timeZone: 'Australia/Sydney',
-        dateStyle: 'full',
-        timeStyle: 'short'
-      }).format(new Date());
+    const sydneyTimeNow = new Intl.DateTimeFormat('en-AU', {
+      timeZone: 'Australia/Sydney',
+      dateStyle: 'full',
+      timeStyle: 'short'
+    }).format(new Date());
 
-      const waText = 
+    const waText = 
 `✨ *NEW ASTROLOGY CONSULTATION REQUEST* ✨
 -----------------------------------------
 👤 *Name:* ${data.name}
@@ -251,12 +262,25 @@ ${data.message}
 -----------------------------------------
 _Sent via Pandith Shivaji Official Portal_`;
 
-      const targetUrl = `https://wa.me/61426528857?text=${encodeURIComponent(waText)}`;
-      showFeedback("Redirecting to WhatsApp with your details. Pandith Shivaji will respond shortly!", "success");
-      
-      setTimeout(() => {
-        window.open(targetUrl, "_blank");
-      }, 700);
+    const targetUrl = `https://wa.me/61426528857?text=${encodeURIComponent(waText)}`;
+    showFeedback("✓ Redirecting to WhatsApp with your details. Pandith Shivaji will respond shortly!", "success");
+    
+    // Immediate redirect works reliably on mobile without being blocked by popup blockers
+    setTimeout(() => {
+      window.location.href = targetUrl;
+    }, 400);
+  }
+
+  // Handle Form Submit Event (Enter key or Submit button)
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    submitToWhatsApp();
+  });
+
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      submitToWhatsApp();
     });
   }
 
@@ -276,7 +300,7 @@ I would like to book an astrology consultation session with you.
 My Details:
 - Name: ${data.name}
 - Phone/WhatsApp: ${data.phone}
-- Email: ${data.email}
+- Email: ${data.email || 'Not provided'}
 - Date of Birth: ${data.dob}
 - Time of Birth: ${data.tob}
 - Place of Birth: ${data.pob}
@@ -285,16 +309,148 @@ My Details:
 Questions / Problem Summary:
 ${data.message}
 
-Please let me know the available consultation slot.
+Please let me know your available consultation slot.
 
 Warm regards,
 ${data.name}`
       );
 
-      showFeedback("Opening your email client to send to astrologerpa857@gmail.com...", "success");
+      showFeedback("✓ Opening your email client to send to astrologerps857@gmail.com...", "success");
       setTimeout(() => {
-        window.location.href = `mailto:astrologerpa857@gmail.com?subject=${subject}&body=${body}`;
-      }, 600);
+        window.location.href = `mailto:astrologerps857@gmail.com?subject=${subject}&body=${body}`;
+      }, 400);
+    });
+  }
+}
+
+/* -----------------------------------------------------------
+   3b. Contact Page Direct Message Form
+----------------------------------------------------------- */
+function initContactPageForm() {
+  const form = document.getElementById("contact-page-form");
+  const whatsappBtn = document.getElementById("btn-contact-whatsapp");
+  const emailBtn = document.getElementById("btn-contact-email");
+  const formFeedback = document.getElementById("contact-form-feedback");
+
+  if (!form) return;
+
+  const inputs = form.querySelectorAll(".form-control");
+  inputs.forEach((input) => {
+    input.addEventListener("input", () => {
+      input.classList.remove("is-invalid");
+    });
+  });
+
+  function getFormData() {
+    return {
+      name: document.getElementById("contact-name")?.value.trim() || "",
+      phone: document.getElementById("contact-phone")?.value.trim() || "",
+      email: document.getElementById("contact-email")?.value.trim() || "",
+      subject: document.getElementById("contact-subject")?.value || "Sydney In-Person Consultation",
+      message: document.getElementById("contact-message")?.value.trim() || "",
+    };
+  }
+
+  function validateBasic(data) {
+    let isValid = true;
+    if (!data.name) {
+      document.getElementById("contact-name")?.classList.add("is-invalid");
+      showFeedback("Please enter your name.", "error");
+      document.getElementById("contact-name")?.focus();
+      isValid = false;
+    }
+    if (!data.phone || data.phone.length < 5) {
+      document.getElementById("contact-phone")?.classList.add("is-invalid");
+      if (isValid) {
+        showFeedback("Please provide a valid phone or WhatsApp number.", "error");
+        document.getElementById("contact-phone")?.focus();
+      }
+      isValid = false;
+    }
+    if (!data.message) {
+      document.getElementById("contact-message")?.classList.add("is-invalid");
+      if (isValid) {
+        showFeedback("Please enter your message or question.", "error");
+        document.getElementById("contact-message")?.focus();
+      }
+      isValid = false;
+    }
+    return isValid;
+  }
+
+  function showFeedback(msg, type = "success") {
+    if (!formFeedback) return;
+    formFeedback.textContent = msg;
+    formFeedback.className = `form-feedback ${type} show`;
+    setTimeout(() => {
+      formFeedback.classList.remove("show");
+    }, 6000);
+  }
+
+  function submitToWhatsApp() {
+    const data = getFormData();
+    if (!validateBasic(data)) return;
+
+    const waText = 
+`✨ *NEW INQUIRY FOR PANDITH SHIVAJI* ✨
+-----------------------------------------
+👤 *Name:* ${data.name}
+📱 *Phone/WhatsApp:* ${data.phone}
+📧 *Email:* ${data.email || 'Not provided'}
+📍 *Topic:* ${data.subject}
+
+💬 *Message:*
+${data.message}
+-----------------------------------------
+_Sent via Pandith Shivaji Sydney Official Website_`;
+
+    const targetUrl = `https://wa.me/61426528857?text=${encodeURIComponent(waText)}`;
+    showFeedback("✓ Redirecting to WhatsApp with your message...", "success");
+    setTimeout(() => {
+      window.location.href = targetUrl;
+    }, 400);
+  }
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    submitToWhatsApp();
+  });
+
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      submitToWhatsApp();
+    });
+  }
+
+  if (emailBtn) {
+    emailBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      const data = getFormData();
+      if (!validateBasic(data)) return;
+
+      const emailSubject = encodeURIComponent(`Inquiry from ${data.name} - ${data.subject}`);
+      const body = encodeURIComponent(
+`Respected Pandith Shivaji Ji,
+
+I would like to inquire regarding ${data.subject}.
+
+My Details:
+- Name: ${data.name}
+- Phone/WhatsApp: ${data.phone}
+- Email: ${data.email || 'Not provided'}
+
+Message:
+${data.message}
+
+Warm regards,
+${data.name}`
+      );
+
+      showFeedback("✓ Opening email client to send to astrologerps857@gmail.com...", "success");
+      setTimeout(() => {
+        window.location.href = `mailto:astrologerps857@gmail.com?subject=${emailSubject}&body=${body}`;
+      }, 400);
     });
   }
 }
