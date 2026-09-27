@@ -20,6 +20,44 @@
   <meta property="og:image" content="assets/images/pandith-shivaji.jpg">
   <meta property="og:type" content="website">
 
+  <!-- Schema.org Structured Data (LocalBusiness & Astrologer) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Pandith Shivaji - Renowned Vedic Astrologer & Spiritual Healer",
+    "image": "assets/images/pandith-shivaji.jpg",
+    "telephone": "+61426528857",
+    "email": "astrologerps857@gmail.com",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sydney",
+      "addressRegion": "NSW",
+      "postalCode": "2000",
+      "addressCountry": "AU"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": -33.8688,
+      "longitude": 151.2093
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "08:00",
+      "closes": "21:00"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5.0",
+      "reviewCount": "485",
+      "bestRating": "5",
+      "worstRating": "1"
+    }
+  }
+  </script>
+
   <!-- Favicon & Touch Icons -->
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕉️</text></svg>">
@@ -35,6 +73,24 @@
   <div class="ambient-glow-1"></div>
   <div class="ambient-glow-2"></div>
   <div class="ambient-glow-3"></div>
+
+  <!-- 0. Live Glowing Announcement Ticker Bar (Urgent Alerts & Live Status) -->
+  <div class="announcement-ticker-wrap">
+    <div class="container ticker-inner">
+      <span class="ticker-badge"><span class="ticker-badge-dot"></span> Live Now</span>
+      <div class="ticker-marquee">
+        <div class="ticker-content">
+          <span class="ticker-item">🔴 <strong>Emergency Consultations:</strong> Master Pandith Shivaji is available today for in-person Sydney office &amp; online WhatsApp sessions.</span>
+          <span class="ticker-item">📞 <strong>Direct Line:</strong> <a href="tel:+61426528857">+61 426 528 857</a> (Instant replies within 5 minutes)</span>
+          <span class="ticker-item">🕉️ <strong>Sacred God Pujas:</strong> Navagraha Shanti, Maha Mrityunjaya &amp; Lakshmi Kubera Havan bookings open.</span>
+          <span class="ticker-item">✨ <strong>100% Confidential:</strong> Strict Vedic privacy, genuine ancient remedies, and ethical compassion.</span>
+          <span class="ticker-item">🔴 <strong>Emergency Consultations:</strong> Master Pandith Shivaji is available today for in-person Sydney office &amp; online WhatsApp sessions.</span>
+          <span class="ticker-item">📞 <strong>Direct Line:</strong> <a href="tel:+61426528857">+61 426 528 857</a> (Instant replies within 5 minutes)</span>
+          <span class="ticker-item">🕉️ <strong>Sacred God Pujas:</strong> Navagraha Shanti, Maha Mrityunjaya &amp; Lakshmi Kubera Havan bookings open.</span>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- 1. Top Announcement Bar with Live Australian Clock -->
   <div class="top-bar">
@@ -65,11 +121,11 @@
     </div>
   </div>
 
-  <!-- 2. Header & Navigation -->
+  <!-- 2. Header & Mega Dropdown Navigation -->
   <header class="site-header" id="site-header">
     <div class="header-border-beam"></div>
     <div class="header-container">
-      <a href="#home" class="site-brand" aria-label="Pandith Shivaji Home">
+      <a href="index.html" class="site-brand" aria-label="Pandith Shivaji Home">
         <div class="brand-emblem-wrap">
           <div class="emblem-halo"></div>
           <div class="brand-emblem">
@@ -78,19 +134,168 @@
         </div>
         <div class="brand-text">
           <span class="brand-name">PANDITH SHIVAJI</span>
-          <span class="brand-sub">Vedic Astrologer & Healer</span>
+          <span class="brand-sub">Vedic Astrologer &amp; Healer</span>
         </div>
       </a>
 
-      <!-- Desktop Nav -->
+      <!-- Desktop Nav with Mega Dropdowns -->
       <nav class="nav-menu" id="primary-navigation" aria-label="Main Navigation">
         <a href="index.html" class="nav-link active-nav">Home</a>
         <a href="about.html" class="nav-link">About Pandith Ji</a>
-        <a href="services.html" class="nav-link">Services</a>
+
+        <!-- Services Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="services.html" class="nav-link dropdown-toggle" aria-haspopup="true">
+            <span>Astrology Services</span>
+            <svg class="dropdown-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu wide-grid" role="menu">
+            <a href="services.html#kundli" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">📜</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Janam Kundli Reading</span>
+                <span class="dropdown-item-desc">Birth chart, Dasha &amp; planetary houses</span>
+              </div>
+            </a>
+            <a href="services.html#love" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">💖</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Love &amp; Relationship Solutions</span>
+                <span class="dropdown-item-desc">Resolve misunderstandings &amp; breakup pain</span>
+              </div>
+            </a>
+            <a href="services.html#love" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">🔮</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Get Ex Love Back</span>
+                <span class="dropdown-item-desc">Reunite separated couples ethically</span>
+              </div>
+            </a>
+            <a href="services.html#marriage" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">💍</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Kundli Milan &amp; Marriage</span>
+                <span class="dropdown-item-desc">36 Guna matching &amp; Manglik remedies</span>
+              </div>
+            </a>
+            <a href="services.html#career" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">💼</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Career, Business &amp; Wealth</span>
+                <span class="dropdown-item-desc">Clear debt, promotions &amp; business growth</span>
+              </div>
+            </a>
+            <a href="services.html#protection" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">🛡️</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Black Magic &amp; Evil Eye Removal</span>
+                <span class="dropdown-item-desc">Spiritual cleansing &amp; protective kavach</span>
+              </div>
+            </a>
+            <a href="services.html#palmistry" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">✋</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Palmistry &amp; Face Reading</span>
+                <span class="dropdown-item-desc">Future predictions without birth time</span>
+              </div>
+            </a>
+            <a href="services.html#healing" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">✨</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Psychic &amp; Aura Reading</span>
+                <span class="dropdown-item-desc">Chakra alignment &amp; spiritual guidance</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- God Pujas Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="#god-pujas" class="nav-link dropdown-toggle" aria-haspopup="true">
+            <span>God Pujas</span>
+            <svg class="dropdown-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#god-pujas" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">🔱</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Lord Shiva Puja</span>
+                <span class="dropdown-item-desc">Maha Mrityunjaya, health &amp; longevity</span>
+              </div>
+            </a>
+            <a href="#god-pujas" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">🐘</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Lord Ganesha Puja</span>
+                <span class="dropdown-item-desc">Vighnaharta obstacle remover in ventures</span>
+              </div>
+            </a>
+            <a href="#god-pujas" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">⚔️</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Maa Kali &amp; Durga Puja</span>
+                <span class="dropdown-item-desc">Destroy black magic &amp; hostile energies</span>
+              </div>
+            </a>
+            <a href="#god-pujas" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">🚩</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Jai Hanuman Puja</span>
+                <span class="dropdown-item-desc">Courage, Shani Sade Sati protection</span>
+              </div>
+            </a>
+            <a href="#god-pujas" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">💰</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Maha Lakshmi Kubera Havan</span>
+                <span class="dropdown-item-desc">Attract wealth, clear debt &amp; prosperity</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Locations Dropdown -->
+        <div class="nav-item-dropdown">
+          <a href="#locations-hub" class="nav-link dropdown-toggle" aria-haspopup="true">
+            <span>Locations</span>
+            <svg class="dropdown-arrow" viewBox="0 0 24 24"><path d="M7 10l5 5 5-5z"/></svg>
+          </a>
+          <div class="dropdown-menu" role="menu">
+            <a href="#locations-hub" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">📍</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Sydney CBD &amp; Inner City</span>
+                <span class="dropdown-item-desc">In-Person &amp; WhatsApp Consultations</span>
+              </div>
+            </a>
+            <a href="#locations-hub" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">📍</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Parramatta &amp; Harris Park</span>
+                <span class="dropdown-item-desc">Little India Community Consultations</span>
+              </div>
+            </a>
+            <a href="#locations-hub" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">📍</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Strathfield &amp; Blacktown</span>
+                <span class="dropdown-item-desc">Western Sydney Private Sessions</span>
+              </div>
+            </a>
+            <a href="#locations-hub" class="dropdown-menu-item">
+              <span class="dropdown-item-icon">📍</span>
+              <div class="dropdown-item-text">
+                <span class="dropdown-item-title">Melbourne, Brisbane, Perth</span>
+                <span class="dropdown-item-desc">Australia-wide Priority Video Sessions</span>
+              </div>
+            </a>
+          </div>
+        </div>
+
         <a href="horoscope.html" class="nav-link">Daily Horoscope</a>
         <a href="consultation.html" class="nav-link">Consultation</a>
         <a href="reviews.html" class="nav-link">Reviews</a>
-        <a href="contact.html" class="nav-link">Sydney</a>
+        <a href="contact.html" class="nav-link">Contact</a>
       </nav>
 
       <!-- Header Actions -->
@@ -115,7 +320,7 @@
     </div>
   </header>
 
-  <!-- 3. Hero Section -->
+  <!-- 3. Hero Section with Dynamic Problem Switcher -->
   <section class="hero-section" id="home">
     <div class="container hero-grid">
       <div class="hero-content">
@@ -124,13 +329,24 @@
         </div>
         <h1 class="hero-title">
           Master <span class="gold-shine">Pandith Shivaji</span><br>
-          Sydney's Most Trusted Vedic Astrologer & Spiritual Healer
+          Sydney's Most Trusted Vedic Astrologer &amp; Spiritual Healer
         </h1>
         <p class="hero-description">
           Overcome life's deepest uncertainties with genuine ancient Vedic Shastra. Specialized in accurate Janam Kundli
           readings, love and marriage problem solutions, financial prosperity, and removal of black magic or negative
           planetary doshas.
         </p>
+
+        <!-- Dynamic Hero Multi-Tabs Quick Switcher -->
+        <div class="hero-tabs-wrap">
+          <div class="hero-tabs-label">⚡ Direct Problem Focus:</div>
+          <div class="hero-tabs-nav">
+            <button class="hero-tab-btn active" data-tab="kundli">📜 Vedic Kundli</button>
+            <button class="hero-tab-btn" data-tab="love">💖 Get Ex Love Back</button>
+            <button class="hero-tab-btn" data-tab="protection">🛡️ Evil Eye Removal</button>
+            <button class="hero-tab-btn" data-tab="career">📈 Career &amp; Wealth</button>
+          </div>
+        </div>
 
         <div class="hero-ctas">
           <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20consult%20with%20you%20regarding%20my%20astrological%20concerns."
@@ -142,8 +358,8 @@
             </svg>
             <span>Direct WhatsApp: +61 426 528 857</span>
           </a>
-          <a href="#consultation" class="btn btn-secondary" style="font-size: 1.05rem; padding: 16px 28px;">
-            <span>📜 Book Free Kundli Consultation</span>
+          <a href="#remedy-matcher" class="btn btn-secondary" style="font-size: 1.05rem; padding: 16px 28px;">
+            <span>🔮 Instant Remedy Matcher</span>
           </a>
         </div>
 
@@ -256,6 +472,127 @@
             <h4>Location</h4>
             <p>Open 7 Days: 8am - 9pm</p>
             <a href="contact.html">Australia (Sydney, NSW) →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4.1 Milestone & Experience Statistics Counter Ribbon -->
+  <section class="stats-counter-strip">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card reveal-block-up">
+          <span class="stat-icon">🕉️</span>
+          <span class="number">25+</span>
+          <span class="label">Years Vedic Lineage</span>
+          <span class="sublabel">Hereditary Royal Wisdom</span>
+        </div>
+        <div class="stat-card reveal-block-up stagger-1">
+          <span class="stat-icon">📜</span>
+          <span class="number">15000+</span>
+          <span class="label">Kundlis Decoded</span>
+          <span class="sublabel">Clients Across Australia &amp; Global</span>
+        </div>
+        <div class="stat-card reveal-block-up stagger-2">
+          <span class="stat-icon">🎯</span>
+          <span class="number">99.8%</span>
+          <span class="label">Astrological Accuracy</span>
+          <span class="sublabel">Exact Mathematical Calculations</span>
+        </div>
+        <div class="stat-card reveal-block-up stagger-3">
+          <span class="stat-icon">💖</span>
+          <span class="number">1200+</span>
+          <span class="label">Couples Reunited</span>
+          <span class="sublabel">Ex Love &amp; Marriage Restored</span>
+        </div>
+        <div class="stat-card reveal-block-up stagger-4">
+          <span class="stat-icon">⭐</span>
+          <span class="number">485+</span>
+          <span class="label">5-Star Verified Reviews</span>
+          <span class="sublabel">Top Astrologer in Sydney</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4.2 Interactive Problem & Instant Remedy Matcher (High-Converting Conversion Tool) -->
+  <section class="remedy-matcher-section" id="remedy-matcher">
+    <div class="container">
+      <div class="matcher-container reveal-block-scale">
+        <div class="text-center">
+          <span class="section-badge">⚡ Instant Vedic Diagnostics</span>
+          <h2 class="section-title">Select Your Concern: <span class="text-gold">Instant Remedy Matcher</span></h2>
+          <p class="section-subtitle">
+            Identify the planetary root cause behind your current struggle and view the exact Vedic Shastric remedy, sacred God puja, and auspicious timeframe prescribed by Master Pandith Shivaji.
+          </p>
+        </div>
+
+        <!-- Problem Selector Pills -->
+        <div class="problem-selector-pills">
+          <button class="problem-pill active" data-problem="love">
+            <span>💖</span> Love &amp; Ex Partner Back
+          </button>
+          <button class="problem-pill" data-problem="marriage">
+            <span>💍</span> Marriage Delay &amp; Manglik Dosha
+          </button>
+          <button class="problem-pill" data-problem="career">
+            <span>💼</span> Business Debts &amp; Job Stagnation
+          </button>
+          <button class="problem-pill" data-problem="evil-eye">
+            <span>🛡️</span> Black Magic &amp; Evil Eye Removal
+          </button>
+          <button class="problem-pill" data-problem="palmistry">
+            <span>✋</span> No Birth Time (Palmistry Reading)
+          </button>
+          <button class="problem-pill" data-problem="shani-dosha">
+            <span>🪐</span> Shani Sade Sati &amp; Rahu-Ketu
+          </button>
+        </div>
+
+        <!-- Dynamic Remedy Result Card -->
+        <div class="remedy-result-box" id="remedy-result-display">
+          <div class="remedy-info-side">
+            <div class="remedy-meta-row">
+              <div class="remedy-item">
+                <span class="remedy-item-icon">🌌</span>
+                <div class="remedy-item-content">
+                  <h5>Astrological Planetary Root Cause:</h5>
+                  <p id="remedy-cause">Afflictions to Venus (Shukra), Rahu or Mars in 7th House (Kalatra Bhava), leading to emotional coldness, sudden breakups, or third-party interference.</p>
+                </div>
+              </div>
+
+              <div class="remedy-item">
+                <span class="remedy-item-icon">🔱</span>
+                <div class="remedy-item-content">
+                  <h5>Prescribed Sacred Deity Puja:</h5>
+                  <p id="remedy-puja">Radha Krishna Samvad Puja &amp; Kamadeva Shukra Shanti Havan</p>
+                </div>
+              </div>
+
+              <div class="remedy-item">
+                <span class="remedy-item-icon">💎</span>
+                <div class="remedy-item-content">
+                  <h5>Recommended Vedic Remedy &amp; Yantra:</h5>
+                  <p id="remedy-gem">Natural untreated White Sapphire / Diamond and consecrated Shukra Yantra</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="remedy-action-side">
+            <span class="remedy-badge-fast">⚡ High-Potency Shastric Remedy</span>
+            <div style="font-size: 0.85rem; color: var(--text-muted); margin: 6px 0 10px;">
+              Expected Relief Window:<br>
+              <strong id="remedy-time" style="font-size: 1.25rem; color: var(--gold-300);">7 – 14 Days</strong>
+            </div>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20need%20urgent%20astrological%20guidance%20for%20Love%20%26%20Relationship%20%2F%20Getting%20My%20Ex%20Love%20Back."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" id="remedy-wa-btn" style="width: 100%;">
+              <svg class="wa-icon" viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                <path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.214 8.214 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.46-.3z"/>
+              </svg>
+              <span>Consult Pandith Ji Now</span>
+            </a>
           </div>
         </div>
       </div>
@@ -517,6 +854,201 @@
               </a>
               <a href="#consultation" class="btn-link text-gold">Book Session →</a>
             </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6.5 Sacred God Pujas & Vedic Havans Showcase (High-Intent Spiritual Rituals) -->
+  <section class="god-pujas-section" id="god-pujas">
+    <div class="container">
+      <div class="text-center reveal-block-up">
+        <span class="section-badge">🔱 Sacred Vedic Deity Yagyas</span>
+        <h2 class="section-title">Sacred God Pujas &amp; <span class="text-gold">Spiritual Havans</span></h2>
+        <p class="section-subtitle">
+          In ancient Vedic astrology, dedicated deity worship is the highest and most potent remedy to pacify grave planetary doshas, dissolve stubborn obstacles, and invoke divine blessings for family peace, health, and wealth.
+        </p>
+      </div>
+
+      <div class="pujas-grid">
+        <!-- Puja 1: Lord Shiva -->
+        <article class="puja-card tilt-card reveal-block-up">
+          <div>
+            <div class="puja-card-header">
+              <div class="puja-deity-icon">🔱</div>
+              <div class="puja-deity-titles">
+                <h3>Lord Shiva Maha Mrityunjaya Puja</h3>
+                <span>Health, Longevity &amp; Inner Peace</span>
+              </div>
+            </div>
+            <div class="puja-mantra-box">
+              "ॐ त्र्यम्बकं यजामहे सुगन्धिं पुष्टिवर्धनम्। उर्वारुकमिव बन्धनान्मृत्योर्मुक्षीय मामृतात्॥"
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px;">
+              Performs sacred Rudrabhishekam and 108 Maha Mrityunjaya Jaap to overcome critical health ailments, release fears of sudden calamity, and attain mental serenity.
+            </p>
+            <ul class="puja-benefits-list">
+              <li><span class="check">✓</span> <span>Neutralizes acute health and physical danger</span></li>
+              <li><span class="check">✓</span> <span>Eliminates chronic anxiety, depression and fear</span></li>
+              <li><span class="check">✓</span> <span>Pacifies Saturn (Shani Sade Sati) afflictions</span></li>
+            </ul>
+          </div>
+          <div class="puja-footer">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20book%20a%20Lord%20Shiva%20Maha%20Mrityunjaya%20Puja."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" style="width: 100%; justify-content: center;">
+              <span>Book Lord Shiva Puja via WhatsApp</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Puja 2: Lord Ganesha -->
+        <article class="puja-card tilt-card reveal-block-up stagger-1">
+          <div>
+            <div class="puja-card-header">
+              <div class="puja-deity-icon">🐘</div>
+              <div class="puja-deity-titles">
+                <h3>Lord Ganesha Vighnaharta Puja</h3>
+                <span>Obstacle Removal &amp; Auspicious Starts</span>
+              </div>
+            </div>
+            <div class="puja-mantra-box">
+              "ॐ गं गणपतये नमः। वक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥"
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px;">
+              Invocation of Lord Ganesha, the remover of all life obstacles. Conducted prior to new business launches, property purchases, examinations, and weddings.
+            </p>
+            <ul class="puja-benefits-list">
+              <li><span class="check">✓</span> <span>Clears recurring roadblocks in career and business</span></li>
+              <li><span class="check">✓</span> <span>Auspicious blessings for new contracts &amp; jobs</span></li>
+              <li><span class="check">✓</span> <span>Removes Ketu afflictions and mental confusion</span></li>
+            </ul>
+          </div>
+          <div class="puja-footer">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20book%20a%20Lord%20Ganesha%20Puja."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" style="width: 100%; justify-content: center;">
+              <span>Book Lord Ganesha Puja via WhatsApp</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Puja 3: Maa Kali & Durga -->
+        <article class="puja-card tilt-card reveal-block-up stagger-2">
+          <div>
+            <div class="puja-card-header">
+              <div class="puja-deity-icon">⚔️</div>
+              <div class="puja-deity-titles">
+                <h3>Maa Kali &amp; Durga Raksha Puja</h3>
+                <span>Evil Eye &amp; Black Magic Destruction</span>
+              </div>
+            </div>
+            <div class="puja-mantra-box">
+              "सर्वमङ्गलमाङ्गल्ये शिवे सर्वार्थसाधिके। शरण्ये त्र्यम्बके गौरि नारायणि नमोऽस्तु ते॥"
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px;">
+              Intense protective Shaktism ritual to banish dark energetic curses, destroy jealousy (Buri Drishti), defeat malicious rivals, and establish a permanent aura shield.
+            </p>
+            <ul class="puja-benefits-list">
+              <li><span class="check">✓</span> <span>Permanently expels negative energies from homes</span></li>
+              <li><span class="check">✓</span> <span>Stops recurring domestic nightmares &amp; dread</span></li>
+              <li><span class="check">✓</span> <span>Consecrated Raksha Kavach talisman delivered</span></li>
+            </ul>
+          </div>
+          <div class="puja-footer">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20need%20urgent%20protection%20with%20a%20Maa%20Kali%20and%20Durga%20Puja."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" style="width: 100%; justify-content: center;">
+              <span>Book Maa Kali Puja via WhatsApp</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Puja 4: Jai Hanuman -->
+        <article class="puja-card tilt-card reveal-block-up stagger-1">
+          <div>
+            <div class="puja-card-header">
+              <div class="puja-deity-icon">🚩</div>
+              <div class="puja-deity-titles">
+                <h3>Jai Hanuman Puja &amp; Sundarkand</h3>
+                <span>Courage, Protection &amp; Shani Shanti</span>
+              </div>
+            </div>
+            <div class="puja-mantra-box">
+              "मनोजवं मारुततुल्यवेगं जितेन्द्रियं बुद्धिमतां वरिष्ठम्। वातात्मजं वानरयूथमुख्यं श्रीरामदूतं शरणं प्रपद्ये॥"
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px;">
+              Sacred Hanuman Chalisa Samput, Sindoor offering, and Sundarkand paath. The ultimate remedy to subdue hostile enemies, win legal disputes, and relieve Saturn's wrath.
+            </p>
+            <ul class="puja-benefits-list">
+              <li><span class="check">✓</span> <span>Instant relief from severe Saturn (Shani) transits</span></li>
+              <li><span class="check">✓</span> <span>Victory in difficult court battles and workplace foes</span></li>
+              <li><span class="check">✓</span> <span>Infuses boundless courage and physical vitality</span></li>
+            </ul>
+          </div>
+          <div class="puja-footer">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20arrange%20a%20Jai%20Hanuman%20Puja."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" style="width: 100%; justify-content: center;">
+              <span>Book Hanuman Puja via WhatsApp</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Puja 5: Maha Lakshmi & Kubera -->
+        <article class="puja-card tilt-card reveal-block-up stagger-2">
+          <div>
+            <div class="puja-card-header">
+              <div class="puja-deity-icon">💰</div>
+              <div class="puja-deity-titles">
+                <h3>Maha Lakshmi &amp; Kubera Dhan Havan</h3>
+                <span>Wealth, Debt Relief &amp; Business Prosperity</span>
+              </div>
+            </div>
+            <div class="puja-mantra-box">
+              "ॐ श्रीं ह्रीं क्लीं श्रीं क्लीं वित्तेश्वराय नमः। ॐ ह्रीं श्रीं क्रीं श्रीं क्लीं लक्ष्मी मम गृहे धनं पूरय॥"
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px;">
+              Consecrated Sri Suktam havan with lotus seeds and pure cow ghee. Invokes Goddess Lakshmi and Lord Kubera to unlock blocked assets, eliminate commercial debts, and attract wealth.
+            </p>
+            <ul class="puja-benefits-list">
+              <li><span class="check">✓</span> <span>Reverses heavy financial losses &amp; debt traps</span></li>
+              <li><span class="check">✓</span> <span>Multiplies commercial sales &amp; business contracts</span></li>
+              <li><span class="check">✓</span> <span>Energized copper Sri Yantra included for cash box</span></li>
+            </ul>
+          </div>
+          <div class="puja-footer">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20perform%20a%20Maha%20Lakshmi%20Kubera%20Dhan%20Havan."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" style="width: 100%; justify-content: center;">
+              <span>Book Lakshmi Puja via WhatsApp</span>
+            </a>
+          </div>
+        </article>
+
+        <!-- Puja 6: Navagraha Shanti -->
+        <article class="puja-card tilt-card reveal-block-up stagger-3">
+          <div>
+            <div class="puja-card-header">
+              <div class="puja-deity-icon">🪐</div>
+              <div class="puja-deity-titles">
+                <h3>Sampoorna Navagraha Shanti Havan</h3>
+                <span>9 Planets Harmony &amp; Karmic Balance</span>
+              </div>
+            </div>
+            <div class="puja-mantra-box">
+              "ब्रह्मामुरारिस्त्रिपुरान्तकारी भानुः शशी भूमिसुतो बुधश्च। गुरुश्च शुक्रः शनिराहुकेतवः सर्वे ग्रहाः शान्तिकरा भवन्तु॥"
+            </div>
+            <p style="font-size: 0.88rem; color: var(--text-secondary); margin-bottom: 14px;">
+              Comprehensive pacification of Sun, Moon, Mars, Mercury, Jupiter, Venus, Saturn, Rahu, and Ketu. Resolves unknown cosmic resistance hindering marriage, child conception, and peace.
+            </p>
+            <ul class="puja-benefits-list">
+              <li><span class="check">✓</span> <span>Harmonizes all 9 celestial grahas in your Kundli</span></li>
+              <li><span class="check">✓</span> <span>Cures severe planetary combustion &amp; debilities</span></li>
+              <li><span class="check">✓</span> <span>Sanctified Navagraha yantra talisman provided</span></li>
+            </ul>
+          </div>
+          <div class="puja-footer">
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20perform%20a%20Sampoorna%20Navagraha%20Shanti%20Puja."
+              target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp-sm" style="width: 100%; justify-content: center;">
+              <span>Book Navagraha Havan via WhatsApp</span>
+            </a>
           </div>
         </article>
       </div>
@@ -964,6 +1496,125 @@
     </div>
   </section>
 
+  <!-- 9.5 Australia & Sydney Suburbs Directory (Comprehensive Local SEO Hub) -->
+  <section class="locations-section" id="locations-hub">
+    <div class="container">
+      <div class="text-center reveal-block-up">
+        <span class="section-badge">📍 Suburb &amp; Interstate Coverage</span>
+        <h2 class="section-title">Consultation Coverage: <span class="text-gold">Sydney &amp; Australia Wide</span></h2>
+        <p class="section-subtitle">
+          Master Pandith Shivaji provides private 1-on-1 consultations across all major Sydney suburbs, as well as priority WhatsApp video sessions for clients throughout Australia and overseas.
+        </p>
+      </div>
+
+      <div class="suburbs-grid">
+        <!-- Suburb 1 -->
+        <div class="suburb-card reveal-block-up">
+          <div class="suburb-card-header">
+            <h4>Sydney CBD &amp; Inner City</h4>
+            <span class="suburb-type-badge">HQ Office</span>
+          </div>
+          <p>Private face-to-face appointments available near Central / Town Hall for corporate executives, professionals &amp; families.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">In-Person &amp; Online</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20book%20a%20consultation%20in%20Sydney%20CBD." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+
+        <!-- Suburb 2 -->
+        <div class="suburb-card reveal-block-up stagger-1">
+          <div class="suburb-card-header">
+            <h4>Parramatta</h4>
+            <span class="suburb-type-badge">Popular</span>
+          </div>
+          <p>Western Sydney's central hub. Consultations for Kundli Milan, love problem solutions, and business growth.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Daily Appointments</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20consult%20in%20Parramatta." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+
+        <!-- Suburb 3 -->
+        <div class="suburb-card reveal-block-up stagger-2">
+          <div class="suburb-card-header">
+            <h4>Harris Park</h4>
+            <span class="suburb-type-badge">Cultural Hub</span>
+          </div>
+          <p>Serving the vibrant Little India community with authentic Graha Shanti pujas, palmistry, and marriage astrology.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Same-Day Booking</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20consult%20in%20Harris%20Park." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+
+        <!-- Suburb 4 -->
+        <div class="suburb-card reveal-block-up stagger-3">
+          <div class="suburb-card-header">
+            <h4>Strathfield &amp; Burwood</h4>
+            <span class="suburb-type-badge">Inner West</span>
+          </div>
+          <p>Fast access for Inner West residents seeking spiritual negative energy removal and relationship counseling.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">In-Person &amp; Remote</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20am%20inquiring%20from%20Strathfield." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+
+        <!-- Suburb 5 -->
+        <div class="suburb-card reveal-block-up">
+          <div class="suburb-card-header">
+            <h4>Blacktown &amp; Hills</h4>
+            <span class="suburb-type-badge">Western Suburbs</span>
+          </div>
+          <p>Trusted guidance for family peace, child education yogas, and career promotion gemstone recommendations.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Flexible Timings</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20am%20located%20in%20Blacktown." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+
+        <!-- Suburb 6 -->
+        <div class="suburb-card reveal-block-up stagger-1">
+          <div class="suburb-card-header">
+            <h4>Liverpool &amp; South West</h4>
+            <span class="suburb-type-badge">Greater Sydney</span>
+          </div>
+          <p>Dedicated consultations for black magic protection, home Vastu inspections, and commercial business revival.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Emergency Slots</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20need%20a%20consultation%20in%20Liverpool." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+
+        <!-- Suburb 7 -->
+        <div class="suburb-card reveal-block-up stagger-2">
+          <div class="suburb-card-header">
+            <h4>Melbourne (Victoria)</h4>
+            <span class="suburb-type-badge">Interstate</span>
+          </div>
+          <p>Frequent Melbourne client consultations via high-definition WhatsApp video call with birth chart and remedy delivery.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Priority WhatsApp</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20am%20consulting%20from%20Melbourne." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+
+        <!-- Suburb 8 -->
+        <div class="suburb-card reveal-block-up stagger-3">
+          <div class="suburb-card-header">
+            <h4>Brisbane &amp; Perth</h4>
+            <span class="suburb-type-badge">Interstate / WA</span>
+          </div>
+          <p>Serving Queensland, Western Australia, South Australia, and New Zealand with comprehensive astrological guidance.</p>
+          <div class="suburb-card-footer">
+            <span style="font-size: 0.8rem; color: var(--text-muted);">Nationwide Reach</span>
+            <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20am%20consulting%20from%20Brisbane%2FPerth." target="_blank" rel="noopener noreferrer">Book Session →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- 10. Consultations & Contact -->
   <section class="location-section" id="location">
     <div class="container">
@@ -1301,26 +1952,36 @@
     </div>
   </footer>
 
-  <!-- 13. Floating WhatsApp Icon Button with Pop-up Message -->
-  <aside class="floating-whatsapp-container" aria-label="WhatsApp Quick Contact">
-    <div class="wa-popup-bubble" id="wa-popup-bubble">
-      <div class="wa-bubble-header">
-        <span>Pandith Shivaji (Online)</span>
-        <button class="close-bubble" id="close-wa-bubble" aria-label="Close Chat Suggestion">×</button>
-      </div>
-      <p>Namaste! 🙏 Have questions about love, career, or horoscope? Chat directly with Pandith Shivaji on WhatsApp.
-      </p>
-    </div>
-
-    <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20consult%20with%20you."
-      target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn"
-      aria-label="Direct WhatsApp Chat with Pandith Shivaji">
-      <span class="notification-badge">1</span>
-      <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor">
-        <path
-          d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.214 8.214 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.46-.3z" />
+  <!-- 13. Dual Floating Quick Action Dock (Call Now & WhatsApp) -->
+  <aside class="floating-dock" aria-label="Quick Emergency Contact">
+    <!-- Floating Direct Call Button -->
+    <a href="tel:+61426528857" class="floating-btn-call" aria-label="Direct Phone Call to Pandith Shivaji">
+      <span class="call-tooltip">📞 Call Now: +61 426 528 857</span>
+      <svg viewBox="0 0 24 24" width="26" height="26" fill="currentColor">
+        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
       </svg>
     </a>
+
+    <!-- Floating WhatsApp Widget -->
+    <div class="floating-whatsapp-container" style="position: static;">
+      <div class="wa-popup-bubble" id="wa-popup-bubble">
+        <div class="wa-bubble-header">
+          <span>Pandith Shivaji (Online)</span>
+          <button class="close-bubble" id="close-wa-bubble" aria-label="Close Chat Suggestion">×</button>
+        </div>
+        <p>Namaste! 🙏 Have questions about love, career, or horoscope? Chat directly with Pandith Shivaji on WhatsApp.</p>
+      </div>
+
+      <a href="https://wa.me/61426528857?text=Namaste%20Pandith%20Shivaji%20Ji%2C%20I%20would%20like%20to%20consult%20with%20you."
+        target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn"
+        aria-label="Direct WhatsApp Chat with Pandith Shivaji">
+        <span class="notification-badge">1</span>
+        <svg viewBox="0 0 24 24" width="34" height="34" fill="currentColor">
+          <path
+            d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2zM12.05 20.2c-1.49 0-2.95-.4-4.22-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.214 8.214 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23zm4.52-6.17c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.12-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.14.17-.25.25-.41.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.66.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.12.17 1.78 2.72 4.31 3.81.6.26 1.07.42 1.44.53.61.2 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.18-.46-.3z" />
+        </svg>
+      </a>
+    </div>
   </aside>
 
   <!-- 14. Mobile Sticky Bottom Action Bar -->

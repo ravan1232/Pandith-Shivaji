@@ -19,6 +19,9 @@ document.addEventListener("DOMContentLoaded", () => {
   initHeaderScroll();
   initWhatsAppWidget();
   initCopyButtons();
+  initHeroTabs();
+  initRemedyMatcher();
+  initMobileDropdowns();
 });
 
 /* -----------------------------------------------------------
@@ -920,4 +923,161 @@ function initInteractiveKundli() {
     });
   });
 }
+
+/* -----------------------------------------------------------
+   14. Dynamic Hero Multi-Tabs Quick Switcher
+   ----------------------------------------------------------- */
+function initHeroTabs() {
+  const tabBtns = document.querySelectorAll(".hero-tab-btn");
+  const heroEyebrow = document.querySelector(".hero-eyebrow span");
+  const heroTitle = document.querySelector(".hero-title");
+  const heroDesc = document.querySelector(".hero-description");
+  const heroWaBtn = document.querySelector(".hero-ctas .btn-whatsapp");
+
+  if (!tabBtns.length || !heroTitle || !heroDesc) return;
+
+  const tabData = {
+    kundli: {
+      eyebrow: "✨ 25+ Years of Hereditary Vedic Wisdom",
+      title: 'Master <span class="gold-shine">Pandith Shivaji</span><br>Sydney\'s Most Trusted Vedic Astrologer & Spiritual Healer',
+      desc: "Overcome life's deepest uncertainties with genuine ancient Vedic Shastra. Specialized in accurate Janam Kundli readings, love and marriage problem solutions, financial prosperity, and removal of black magic or negative planetary doshas.",
+      waMessage: "Namaste Pandith Shivaji Ji, I would like to consult with you regarding Janam Kundli and horoscope analysis."
+    },
+    love: {
+      eyebrow: "💖 1,200+ Separated Couples Reunited in Australia",
+      title: 'Get Your <span class="gold-shine">Ex Love Back</span><br>& Resolve Marriage Conflict Permanently',
+      desc: "Heal painful breakups, stop impending divorce, clear third-party misunderstandings, and gain family blessings for love and inter-caste marriages through ethical Shukra (Venus) and Kamadeva Vedic Upayas.",
+      waMessage: "Namaste Pandith Shivaji Ji, I need urgent astrological guidance to get my ex love back and resolve relationship problems."
+    },
+    protection: {
+      eyebrow: "🛡️ 100% Guaranteed Vedic Spiritual Protection",
+      title: 'Powerful <span class="gold-shine">Black Magic & Evil Eye</span><br>Spiritual Cleansing in Sydney',
+      desc: "Experiencing sudden unexplained financial loss, persistent domestic fights, severe nightmares, or chronic heaviness? Pandith Shivaji provides sacred Sudarshana Havans and lifelong Suraksha Kavach.",
+      waMessage: "Namaste Pandith Shivaji Ji, I urgently need spiritual protection and removal of black magic or negative energy."
+    },
+    career: {
+      eyebrow: "📈 Proven Financial Prosperity & Business Remedies",
+      title: 'Unlock Rapid <span class="gold-shine">Career Promotions</span><br>& Clear Business Debts with Vedic Jyotish',
+      desc: "Activate your 2nd, 10th, and 11th houses of wealth. Overcome chronic business losses, job stagnation, partner disputes, and overseas visa delays with energized Sri Yantras and certified Vedic gemstones.",
+      waMessage: "Namaste Pandith Shivaji Ji, I am seeking guidance for career growth, business prosperity, and clearing financial obstacles."
+    }
+  };
+
+  tabBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const tabKey = btn.dataset.tab;
+      const data = tabData[tabKey];
+      if (!data) return;
+
+      tabBtns.forEach((b) => b.classList.remove("active"));
+      btn.classList.add("active");
+
+      if (heroEyebrow) heroEyebrow.textContent = data.eyebrow;
+      heroTitle.innerHTML = data.title;
+      heroDesc.textContent = data.desc;
+
+      if (heroWaBtn) {
+        heroWaBtn.href = `https://wa.me/61426528857?text=${encodeURIComponent(data.waMessage)}`;
+      }
+    });
+  });
+}
+
+/* -----------------------------------------------------------
+   15. Interactive Problem & Instant Remedy Matcher
+   ----------------------------------------------------------- */
+function initRemedyMatcher() {
+  const pills = document.querySelectorAll(".problem-pill");
+  const causeEl = document.getElementById("remedy-cause");
+  const pujaEl = document.getElementById("remedy-puja");
+  const remedyEl = document.getElementById("remedy-gem");
+  const timeEl = document.getElementById("remedy-time");
+  const waBtn = document.getElementById("remedy-wa-btn");
+
+  if (!pills.length || !causeEl) return;
+
+  const problemData = {
+    love: {
+      cause: "Afflictions to Venus (Shukra), Rahu or Mars in 7th House (Kalatra Bhava), leading to emotional coldness, sudden breakups, or third-party interference.",
+      puja: "Radha Krishna Samvad Puja & Kamadeva Shukra Shanti Havan",
+      remedy: "Natural untreated White Sapphire / Diamond and consecrated Shukra Yantra",
+      time: "7 – 14 Days",
+      waText: "Namaste Pandith Shivaji Ji, I need urgent astrological guidance for Love & Relationship / Getting My Ex Love Back."
+    },
+    marriage: {
+      cause: "Manglik Dosha (Bhauma Dosha), Nadi Dosha in Kundli Milan, or Saturn (Shani) aspecting Jupiter in 7th/8th house causing acute delays and family opposition.",
+      puja: "Katyayani Vrata Havan & Manglik Dosha Nivarana Yagya",
+      remedy: "Kumbh Vivah ritual & Energized Red Coral (Moonga) after chart verification",
+      time: "14 – 21 Days",
+      waText: "Namaste Pandith Shivaji Ji, I need assistance for Marriage Delay & Kundli Dosha matching."
+    },
+    career: {
+      cause: "Saturn (Shani) Sade Sati transit, afflicted Sun (Surya) in 10th house, or blocked 11th house of Labha (gains) causing repeating business losses and job instability.",
+      puja: "Maha Lakshmi Kubera Dhan Havan & Surya Aditya Hridaya Sadhana",
+      remedy: "Pure Copper Sri Yantra and Certified Natural Yellow Sapphire (Pukhraj)",
+      time: "7 – 21 Days",
+      waText: "Namaste Pandith Shivaji Ji, I am facing severe Business Debts & Career Obstacles and need remedies."
+    },
+    "evil-eye": {
+      cause: "Severe Rahu-Ketu nodal afflictions in 8th/12th houses, toxic external jealousy (Buri Drishti), or heavy supernatural negative energies causing sudden misfortune.",
+      puja: "Maa Kali Aghor Raksha Puja & Sudarshana Narasimha Protective Havan",
+      remedy: "Consecrated Panchamukhi Rudraksha & Black Tourmaline Protective Kavach",
+      time: "Immediate Relief (3 – 7 Days)",
+      waText: "Namaste Pandith Shivaji Ji, I suspect Black Magic, Evil Eye or Negative Energy disturbances in my life."
+    },
+    palmistry: {
+      cause: "Exact birth time or date unknown? Your palm mounts and lines reflect your complete cosmic karma, lifespan, wealth lines, and future milestones.",
+      puja: "Samudrika Shastra reading & Ishta Devata invocation",
+      remedy: "Send clear high-resolution photos of both palms via WhatsApp for instant remote analysis",
+      time: "Same-Day Analysis",
+      waText: "Namaste Pandith Shivaji Ji, I do not know my exact birth time and want to send my palm photos for reading."
+    },
+    "shani-dosha": {
+      cause: "Shani Sade Sati (7.5 years transit), Dhaiya, or Kaal Sarp Yog causing repeated setbacks, chronic health fatigue, and delayed success in Australia.",
+      puja: "Navagraha Shanti & Shani Tailabhishekam / Hanuman Chalisa Samput",
+      remedy: "Iron ring forged from black horse shoe & Shani Yantra charity rituals",
+      time: "11 – 21 Days",
+      waText: "Namaste Pandith Shivaji Ji, I am suffering from Shani Sade Sati and Rahu-Ketu planetary doshas."
+    }
+  };
+
+  pills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      const key = pill.dataset.problem;
+      const data = problemData[key];
+      if (!data) return;
+
+      pills.forEach((p) => p.classList.remove("active"));
+      pill.classList.add("active");
+
+      causeEl.textContent = data.cause;
+      pujaEl.textContent = data.puja;
+      remedyEl.textContent = data.remedy;
+      timeEl.textContent = data.time;
+
+      if (waBtn) {
+        waBtn.href = `https://wa.me/61426528857?text=${encodeURIComponent(data.waText)}`;
+      }
+    });
+  });
+}
+
+/* -----------------------------------------------------------
+   16. Mobile Dropdown Menus Support
+   ----------------------------------------------------------- */
+function initMobileDropdowns() {
+  const dropdownToggles = document.querySelectorAll(".dropdown-toggle");
+  dropdownToggles.forEach((toggle) => {
+    toggle.addEventListener("click", (e) => {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        const parent = toggle.closest(".nav-item-dropdown");
+        if (parent) {
+          parent.classList.toggle("active");
+        }
+      }
+    });
+  });
+}
+
 
