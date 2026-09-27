@@ -15,7 +15,7 @@ A responsive, multi-page Vedic Astrology and Spiritual Healing web application b
   - `horoscope.html`: Live 12-sign Vedic horoscope explorer with real-time daily predictions and Navagraha (9 planets) transit analysis.
   - `consultation.html`: Private appointment booking form with instant WhatsApp and Email dispatch.
   - `reviews.html`: 5.0 Google verified reviews from Sydney and international clients.
-  - `contact.html`: Physical office location with embedded Google Maps, transit directions, and Sydney office status.
+  - `contact.html`: Contact coordinates, consultation availability, and Sydney status.
 
 - **Australian Time & Working Hours**:
   - Live Sydney (AEST/AEDT) digital clock ticking in real-time in the announcement bar.
@@ -34,10 +34,8 @@ A responsive, multi-page Vedic Astrology and Spiritual Healing web application b
   - Floating WhatsApp chat badge with animated invitation bubble.
   - Mobile bottom sticky action bar with 1-click calling and WhatsApp routing.
 
-- **Physical Office Location**:
-  - **Address**: 141 Kingsland Rd, Regents Park NSW 2143, Australia.
-  - **Google Maps**: [https://maps.app.goo.gl/afSZsaGmyifJnoER7](https://maps.app.goo.gl/afSZsaGmyifJnoER7)
-  - Coordinates: `-33.8836327, 151.0283356`
+- **Location & Consultations**:
+  - **Location**: Australia (Sydney, NSW)
 
 ---
 
@@ -46,7 +44,7 @@ A responsive, multi-page Vedic Astrology and Spiritual Healing web application b
 ```text
 ├── about.html              # About Pandith Shivaji page
 ├── consultation.html       # Appointment booking page
-├── contact.html            # Location, transit directions & Google map
+├── contact.html            # Contact & consultations page
 ├── horoscope.html          # Daily Zodiac & Vedic horoscope page
 ├── index.html              # Homepage
 ├── reviews.html            # Verified client testimonials
@@ -99,4 +97,4 @@ Open `http://localhost:8080` in your web browser.
 - **Practitioner**: Master Pandith Shivaji Maharaj
 - **Phone / WhatsApp**: [+61 426 528 857](https://wa.me/61426528857)
 - **Email**: [astrologerps857@gmail.com](mailto:astrologerps857@gmail.com)
-- **Address**: 141 Kingsland Rd, Regents Park NSW 2143, Australia
+- **Address**: Australia (Sydney, NSW)

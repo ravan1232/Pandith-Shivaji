@@ -661,10 +661,10 @@ function initAustraliaLiveClock() {
 
     statusElements.forEach((el) => {
       if (isOpen) {
-        el.innerHTML = `<span class="status-dot open"></span> Office Open Now (Sydney)`;
+        el.innerHTML = `<span class="status-dot open"></span> Available Now (Sydney)`;
         el.className = "office-status-badge status-open sydney-office-status";
       } else {
-        el.innerHTML = `<span class="status-dot closed"></span> Office Reopens 8:00 AM (Sydney)`;
+        el.innerHTML = `<span class="status-dot closed"></span> Consultations Resume 8:00 AM (Sydney)`;
         el.className = "office-status-badge status-closed sydney-office-status";
       }
     });
@@ -835,7 +835,7 @@ function initInteractiveKundli() {
       title: "4th House: Home, Land & Inner Peace",
       desc: "The house of mother, ancestral properties, real estate, vehicles, and peace of mind (Mano-Bala). Disrupted 4th house leads to anxiety and domestic turmoil.",
       remedyTitle: "🏡 Pandith Ji's Remedy Focus",
-      remedyDesc: "Vastu Shastra corrections for Regents Park & Australian homes, Chandra (Moon) pacification remedies."
+      remedyDesc: "Vastu Shastra corrections for Sydney & Australian homes, Chandra (Moon) pacification remedies."
     },
     5: {
       badge: "House 5 • Putra Bhava",
