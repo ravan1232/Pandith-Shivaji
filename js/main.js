@@ -944,13 +944,13 @@ function initHeroTabs() {
       waMessage: "Namaste Pandith Shivaji Ji, I would like to consult with you regarding Janam Kundli and horoscope analysis."
     },
     love: {
-      eyebrow: "💖 1,200+ Separated Couples Reunited in Australia",
+      eyebrow: "💖 Relationship & Marriage Astrology Consultations",
       title: 'Get Your <span class="gold-shine">Ex Love Back</span><br>& Resolve Marriage Conflict Permanently',
       desc: "Heal painful breakups, stop impending divorce, clear third-party misunderstandings, and gain family blessings for love and inter-caste marriages through ethical Shukra (Venus) and Kamadeva Vedic Upayas.",
       waMessage: "Namaste Pandith Shivaji Ji, I need urgent astrological guidance to get my ex love back and resolve relationship problems."
     },
     protection: {
-      eyebrow: "🛡️ 100% Guaranteed Vedic Spiritual Protection",
+      eyebrow: "🛡️ Traditional Vedic Spiritual Protection",
       title: 'Powerful <span class="gold-shine">Black Magic & Evil Eye</span><br>Spiritual Cleansing in Sydney',
       desc: "Experiencing sudden unexplained financial loss, persistent domestic fights, severe nightmares, or chronic heaviness? Pandith Shivaji provides sacred Sudarshana Havans and lifelong Suraksha Kavach.",
       waMessage: "Namaste Pandith Shivaji Ji, I urgently need spiritual protection and removal of black magic or negative energy."
@@ -1022,7 +1022,7 @@ function initRemedyMatcher() {
       cause: "Severe Rahu-Ketu nodal afflictions in 8th/12th houses, toxic external jealousy (Buri Drishti), or heavy supernatural negative energies causing sudden misfortune.",
       puja: "Maa Kali Aghor Raksha Puja & Sudarshana Narasimha Protective Havan",
       remedy: "Consecrated Panchamukhi Rudraksha & Black Tourmaline Protective Kavach",
-      time: "Immediate Relief (3 – 7 Days)",
+      time: "Spiritual Guidance & Protection (3 – 7 Days)",
       waText: "Namaste Pandith Shivaji Ji, I suspect Black Magic, Evil Eye or Negative Energy disturbances in my life."
     },
     palmistry: {

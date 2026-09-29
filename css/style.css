@@ -2521,6 +2521,17 @@ textarea.form-control {
   margin-bottom: 8px;
 }
 
+.stat-card .number.text-mode {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  min-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
 .stat-card .label {
   font-size: 0.85rem;
   color: var(--text-secondary);
@@ -3362,6 +3373,17 @@ textarea.form-control {
   display: block;
   line-height: 1.1;
   margin-bottom: 4px;
+}
+
+.stat-card .number.text-mode {
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.25;
+  min-height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .stat-card .label {
